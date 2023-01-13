@@ -1,8 +1,30 @@
-export const header = {
-  links: [
+export interface Theader {
+  menu: Menu[];
+  button: Button[];
+}
+
+export interface Button {
+  name: string;
+}
+
+export interface Menu {
+  name: string;
+  submenu?: Submenu[];
+  href?: string;
+  withDescription?: boolean;
+}
+
+export interface Submenu {
+  href?: string;
+  name: string;
+  description?: string;
+  hreh?: string;
+}
+
+export const header: Theader = {
+  menu: [
     {
       name: "بیشتر",
-      href: "/more",
       submenu: [
         {
           href: "/weblog",
@@ -17,7 +39,7 @@ export const header = {
           name: "سوالات متداول",
         },
         {
-          hreh: "/application",
+          href: "/application",
           name: "اپلیکیشن",
         },
         {
@@ -31,27 +53,32 @@ export const header = {
     { name: "تعرفه", href: "/tariff" },
     {
       name: "محصولات",
-      href: "/products",
+      withDescription: true,
       submenu: [
         {
           href: "/weblog",
-          name: "وبلاک",
+          name: "وبلاگ",
+          description: "متن توضیحات",
         },
         {
           href: "/numberShaba",
           name: "دریافت شماره شبا",
+          description: "متن توضیحات",
         },
         {
           href: "/questions",
           name: "سوالات متداول",
+          description: "متن توضیحات",
         },
         {
-          hreh: "/application",
+          href: "/application",
           name: "اپلیکیشن",
+          description: "متن توضیحات",
         },
         {
           href: "/zarinbin",
           name: "زرین بین",
+          description: "متن توضیحات",
         },
       ],
     },
