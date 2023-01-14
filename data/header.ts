@@ -1,10 +1,12 @@
 export interface Theader {
   menu: Menu[];
   button: Button[];
+  mobileMenu: mobileMenu[];
 }
 
 export interface Button {
   name: string;
+  href?: string;
 }
 
 export interface Menu {
@@ -21,14 +23,26 @@ export interface Submenu {
   hreh?: string;
 }
 
+export interface mobileMenu {
+  href?: string;
+  name: string;
+}
+
 export const header: Theader = {
+  mobileMenu: [
+    { href: "/tariff", name: "تعرفه" },
+    { href: "/application", name: "اپلیکیشن" },
+    { href: "/questions", name: "سوالات متداول" },
+    { href: "/Products", name: "محصولات" },
+    { href: "/contactUs", name: "تماس با ما" },
+  ],
   menu: [
     {
       name: "بیشتر",
       submenu: [
         {
           href: "/weblog",
-          name: "وبلاک",
+          name: "وبلاگ",
         },
         {
           href: "/numberShaba",
@@ -83,6 +97,5 @@ export const header: Theader = {
       ],
     },
   ],
-
-  button: [{ name: "زرین پال من " }],
+  button: [{ name: "زرین پال من ", href: "/myZarinpal" }],
 };
