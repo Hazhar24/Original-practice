@@ -120,7 +120,7 @@ function Menu() {
   );
 }
 
-export default function HomeOriginal() {
+export default function Home() {
   return (
     <div className="mt-7 container w-4/5 mx-auto text-sm">
       <div className="flex flex-1 items-center">

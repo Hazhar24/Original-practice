@@ -1,9 +1,11 @@
-import HomeOriginal from "pages";
+import Home from "./Home/HomeOriginal";
 
-export default function Home() {
+const index = () => {
   return (
     <div>
-      <HomeOriginal />
+      <Home />
     </div>
   );
-}
+};
+
+export default index;
