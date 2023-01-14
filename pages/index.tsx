@@ -1,4 +1,4 @@
-import Home from "./Home/HomeOriginal";
+import Home from "./Layout/Home";
 
 const index = () => {
   return (
