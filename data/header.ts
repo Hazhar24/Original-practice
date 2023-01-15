@@ -1,5 +1,5 @@
 export interface Theader {
-  menu: Menu[];
+  desktopMenu: desktopMenu[];
   button: Button[];
   mobileMenu: mobileMenu[];
 }
@@ -9,7 +9,7 @@ export interface Button {
   href?: string;
 }
 
-export interface Menu {
+export interface desktopMenu {
   name: string;
   submenu?: Submenu[];
   href?: string;
@@ -36,7 +36,7 @@ export const header: Theader = {
     { href: "/Products", name: "محصولات" },
     { href: "/contactUs", name: "تماس با ما" },
   ],
-  menu: [
+  desktopMenu: [
     {
       name: "بیشتر",
       submenu: [

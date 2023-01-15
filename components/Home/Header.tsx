@@ -37,7 +37,7 @@ function Logo() {
   );
 }
 
-function SubMenuWithDescription(props: headerTypes.Menu) {
+function SubMenuWithDescription(props: headerTypes.desktopMenu) {
   return (
     <>
       <li className="group relative dropdown px-2 lg:px-4 cursor-pointer">
@@ -67,7 +67,7 @@ function SubMenuWithDescription(props: headerTypes.Menu) {
   );
 }
 
-function SubMenu(props: headerTypes.Menu) {
+function SubMenu(props: headerTypes.desktopMenu) {
   return (
     <>
       <li className="group relative dropdown px-2 lg:px-4 cursor-pointer">
@@ -97,7 +97,7 @@ function SubMenu(props: headerTypes.Menu) {
 function Menu() {
   return (
     <>
-      {header.menu.map((item: headerTypes.Menu) =>
+      {header.desktopMenu.map((item: headerTypes.desktopMenu) =>
         item.submenu ? (
           item.withDescription ? (
             <SubMenuWithDescription
