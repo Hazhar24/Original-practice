@@ -16,7 +16,7 @@ function LoginButton() {
 
 function Logo() {
   return (
-    <div className="flex justify-end">
+    <Link href="/" className="flex justify-end">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="136"
@@ -33,7 +33,7 @@ function Logo() {
           />
         </g>
       </svg>
-    </div>
+    </Link>
   );
 }
 
@@ -156,7 +156,7 @@ export default function Header() {
           <Link href="/">{header.button[0].name}</Link>
         </div>
       </ul>
-      <div className="container hidden md:flex w-3/4 mx-auto mt-3 text-sm border-b h-16">
+      <div className="container hidden mx-auto mt-3 text-sm border-b h-16 md:w-full md:flex w-3/4 lg:w-full lg:mx-auto xl:w-3/4 xl:mx-auto">
         <div className="flex flex-1 items-center">
           <LoginButton />
           <ul className="w-full flex flex-row">
