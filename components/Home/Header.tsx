@@ -136,7 +136,7 @@ export default function Header() {
         </div>
       </div>
       <ul
-        className={`absolute w-full md:hidden text-right lg:hidden mt-16 duration-500 ${
+        className={`absolute w-full bg-white md:hidden text-right lg:hidden mt-16 duration-500 ${
           open ? "top-0" : "top-[-100%]"
         }`}
       >

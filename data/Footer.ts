@@ -10,6 +10,10 @@ export interface Tfooter {
   morecommunication: morecommunication[];
   moreGettingZarinPal: moreGettingZarinPal[];
   moreProducts: moreProducts[];
+  zaripal: zaripal[];
+}
+export interface zaripal {
+  name: string;
 }
 export interface moreProducts {
   name: string;
@@ -54,14 +58,14 @@ export const footer: Tfooter = {
   support: [
     { name: "021-41239 : شماره تماس" },
     { name: "|" },
-    { name: "پشتیبانی24ساعته 7روز هفته" },
+    { name: "پشتیبانی 24 ساعته 7روز هفته" },
   ],
   moreSources: [
     { name: "دریافت شماره شبا", href: "/" },
     { name: "زرین بین", href: "/" },
     { name: "توسعه دهندگان", href: "/" },
     { name: "وبلاگ", href: "/" },
-    { name: "سنجش ریضایتمندی", href: "/" },
+    { name: "سنجش رضایتمندی", href: "/" },
   ],
   morecommunication: [
     { name: "تماس با ما", href: "/" },
@@ -90,4 +94,5 @@ export const footer: Tfooter = {
 
   socialNetworks: [{ name: ": زرین پال در شبکه های اجتماعی" }],
   button: [{ name: "درخواست پشتیبانی", href: "/" }],
+  zaripal: [{ name: "زرین‌پال ۱۴۰۱-۱۳۸۹©" }],
 };
