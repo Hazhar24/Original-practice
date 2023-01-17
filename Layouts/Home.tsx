@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Home/Header";
 import Footer from "@/components/Home/Footer";
-import Main from "@/components/Home/main";
+import Main from "@/components/Home/Content";
 
 const Home = () => {
   return (
