@@ -1,10 +1,10 @@
 export interface TContent {
-  Part1: Part1[];
+  Section1: Section1[];
   Register: Register[];
   Login: Login[];
 }
 
-export interface Part1 {
+export interface Section1 {
   name: string;
 }
 export interface Register {
@@ -17,7 +17,7 @@ export interface Login {
 }
 
 export const Content: TContent = {
-  Part1: [
+  Section1: [
     { name: "بیش از ۱۲ سال" },
     { name: "انتخاب مطمئنِ کسب و کارهای آنلاین" },
     {

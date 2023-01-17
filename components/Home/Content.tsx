@@ -3,7 +3,7 @@ import { Content } from "@/data/Content";
 import Link from "next/link";
 import { RiArrowDownSLine } from "react-icons/ri";
 
-const Part1 = () => {
+const Section = () => {
   return (
     <div className="container w-full border rounded-3xl mt-5 bg-blue-900 mx-auto xl:w-3/4">
       <div className="flex flex-row px-20 bg-hero">
@@ -12,13 +12,13 @@ const Part1 = () => {
         </div>
         <div className="flex flex-1 pt-20 flex-col text-right sm:text-center lg:text-right justify-center text-white">
           <p className="text-xl sm:text-3xl pb-4 font-bold">
-            {Content.Part1[0].name}
+            {Content.Section1[0].name}
           </p>
           <p className="text-xl sm:text-3xl pb-5 lg:pb-10 font-bold">
-            {Content.Part1[1].name}
+            {Content.Section1[1].name}
           </p>
           <p className="font-medium tracking-widest ">
-            {Content.Part1[2].name}
+            {Content.Section1[2].name}
           </p>
           <div className="flex justify-center lg:justify-end mt-16">
             <button className="border border-blue-900 w-16 h-10 mx-1 pb-1 bg-blue-700 rounded-xl">
@@ -44,9 +44,7 @@ const Part1 = () => {
 };
 
 const Main = () => {
-  return (
-    <Part1 />
-  ) 
+  return <Section />;
 };
 
 export default Main;
