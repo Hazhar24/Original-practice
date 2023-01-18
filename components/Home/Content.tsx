@@ -1,5 +1,5 @@
 import React from "react";
-import { Content } from "@/data/Content";
+import { ContentMain } from "@/data/Content";
 import Link from "next/link";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { BiLeftArrowAlt } from "react-icons/bi";
@@ -14,20 +14,20 @@ const SectionOne = () => {
         </div>
         <div className="flex flex-1 pt-20 flex-col text-right sm:text-center lg:text-right justify-center text-white">
           <p className="text-xl sm:text-3xl pb-4 font-bold">
-            {Content.Section1[0].name}
+            {ContentMain.Section1[0].name}
           </p>
           <p className="text-xl sm:text-3xl pb-5 lg:pb-10 font-bold">
-            {Content.Section1[1].name}
+            {ContentMain.Section1[1].name}
           </p>
           <p className="font-medium tracking-widest ">
-            {Content.Section1[2].name}
+            {ContentMain.Section1[2].name}
           </p>
           <div className="flex justify-center lg:justify-end mt-16">
             <button className="border border-blue-900 w-16 h-10 mx-1 pb-1 bg-blue-700 rounded-xl">
-              <Link href="/">{Content.Login[0].name}</Link>
+              <Link href="/">{ContentMain.Login[0].name}</Link>
             </button>
             <button className="border border-blue-900 w-20 h-10 bg-yellow-400 rounded-xl text-black font-medium">
-              <Link href="/">{Content.Register[0].name}</Link>
+              <Link href="/">{ContentMain.Register[0].name}</Link>
             </button>
           </div>
         </div>
@@ -51,15 +51,17 @@ const SectionOne = () => {
 
 const SectionTwo = () => {
   return (
-    <div id="SectionTwo" className="container w-full mx-auto xl:w-3/4 pt-24">
+    <div className="container w-full mx-auto xl:w-3/4 pt-24" id="SectionTwo">
       <div className="flex flex-wrap flex-col-reverse lg:flex lg:flex-row justify-center items-center">
         <div className="flex flex-1 flex-col text-center md:text-right">
-          <p className="text-2xl text-slate-500">{Content.Section2[0].name}</p>
+          <p className="text-2xl text-slate-500">
+            {ContentMain.Section2[0].name}
+          </p>
           <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
-            {Content.Section2[1].name}
+            {ContentMain.Section2[1].name}
           </p>
           <p className=" text-center mx-5 md:mx-0 ">
-            {Content.Section2[2].name}
+            {ContentMain.Section2[2].name}
           </p>
           <div className=" my-8">
             <hr />
@@ -67,13 +69,13 @@ const SectionTwo = () => {
           <div className="flex mx-auto justify-center lg:justify-end">
             <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
               <BiLeftArrowAlt className="mt-1 text-lg" />
-              <Link href="/">{Content.moreAbout[0].name}</Link>
+              <Link href="/">{ContentMain.moreAbout[0].name}</Link>
             </p>
             <Link
               className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
               href="/"
             >
-              {Content.Makepayment[0].name}
+              {ContentMain.Makepayment[0].name}
             </Link>
           </div>
         </div>
@@ -85,7 +87,7 @@ const SectionTwo = () => {
   );
 };
 
-const Main = () => {
+const Content = () => {
   return (
     <>
       <SectionOne />
@@ -94,4 +96,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Content;

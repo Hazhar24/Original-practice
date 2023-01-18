@@ -29,7 +29,7 @@ export interface Login {
   href?: string;
 }
 
-export const Content: TContent = {
+export const ContentMain: TContent = {
   Register: [{ name: "ثبت نام", href: "/" }],
   Login: [{ name: "ورود", href: "/" }],
   Makepayment: [{ name: "ساخت درگاه پرداخت", href: "/" }],
