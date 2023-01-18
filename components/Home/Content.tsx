@@ -2,8 +2,10 @@ import React from "react";
 import { Content } from "@/data/Content";
 import Link from "next/link";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { BiLeftArrowAlt } from "react-icons/bi";
+import Image from "next/image";
 
-const Section = () => {
+const OneSection = () => {
   return (
     <div className="container w-full border rounded-3xl mt-5 bg-blue-900 mx-auto xl:w-3/4">
       <div className="flex flex-row px-20 bg-hero">
@@ -30,21 +32,66 @@ const Section = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-44 mx-auto relative top-20">
-        <img
-          src="https://www.zarinpal.com/assets/images/arrowbottom.svg?6588af1e1354de9198542e58bf5e3224"
+      <div className="flex mx-auto justify-center relative top-20">
+        <Image
+          src="assets/arrowbottom.svg"
           alt="arrowbottom"
+          width={190}
+          height={100}
         />
       </div>
       <button className="relative mx-auto flex justify-center">
-        <RiArrowDownSLine className="text-4xl" />
+        <a href="#SectionTwo">
+          <RiArrowDownSLine className="text-3xl" />
+        </a>
       </button>
     </div>
   );
 };
 
+const TwoSection = () => {
+  return (
+    <div id="SectionTwo" className="container w-full mx-auto xl:w-3/4 pt-24">
+      <div className="flex flex-wrap flex-col-reverse lg:flex lg:flex-row justify-center items-center">
+        <div className="flex flex-1 flex-col text-center md:text-right">
+          <p className="text-2xl text-slate-500">{Content.Section2[0].name}</p>
+          <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
+            {Content.Section2[1].name}
+          </p>
+          <p className=" text-center mx-5 md:mx-0 ">
+            {Content.Section2[2].name}
+          </p>
+          <div className=" my-8">
+            <hr />
+          </div>
+          <div className="flex mx-auto justify-center lg:justify-end">
+            <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+              <BiLeftArrowAlt className="mt-1 text-lg" />
+              <Link href="/">{Content.moreAbout[0].name}</Link>
+            </p>
+            <Link
+              className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
+              href="/"
+            >
+              {Content.Makepayment[0].name}
+            </Link>
+          </div>
+        </div>
+        <div className=" hidden sm:flex flex-1 relative bottom-10 xl:left-20">
+          <Image src="assets/pg.svg" alt="pgsvg" width={450} height={450} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Main = () => {
-  return <Section />;
+  return (
+    <>
+      <OneSection />
+      <TwoSection />
+    </>
+  );
 };
 
 export default Main;
