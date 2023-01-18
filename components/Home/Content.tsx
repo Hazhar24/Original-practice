@@ -5,7 +5,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
-const OneSection = () => {
+const SectionOne = () => {
   return (
     <div className="container w-full border rounded-3xl mt-5 bg-blue-900 mx-auto xl:w-3/4">
       <div className="flex flex-row px-20 bg-hero">
@@ -49,7 +49,7 @@ const OneSection = () => {
   );
 };
 
-const TwoSection = () => {
+const SectionTwo = () => {
   return (
     <div id="SectionTwo" className="container w-full mx-auto xl:w-3/4 pt-24">
       <div className="flex flex-wrap flex-col-reverse lg:flex lg:flex-row justify-center items-center">
@@ -88,8 +88,8 @@ const TwoSection = () => {
 const Main = () => {
   return (
     <>
-      <OneSection />
-      <TwoSection />
+      <SectionOne />
+      <SectionTwo />
     </>
   );
 };
