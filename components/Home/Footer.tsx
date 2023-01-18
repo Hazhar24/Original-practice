@@ -24,7 +24,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col-reverse w-full mx-auto mt-12 lg:flex-row lg:items-start">
         <div className="flex flex-col w-72 justify-center mx-auto mt-10 md:mt-0">
-          <div className="font-bold text-center md:text-right ">
+          <div className="font-bold text-gray-900 text-center md:text-right ">
             {footer.socialNetworks[0].name}
           </div>
           <div className="flex text-2xl text-blue-900 mt-4">
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             <div className="mt-5">
               {footer.moreSources.map((item) => (
-                <ul className="py-1 md:py-2 text-right">
+                <ul className="py-1 md:py-2 text-right font-medium text-gray-600">
                   <Link key={item.name} href={item.href ? item.href : "/"}>
                     {item.name}
                   </Link>
@@ -74,7 +74,10 @@ const Footer = () => {
               </div>
               <div className="mt-5">
                 {footer.morecommunication.map((item) => (
-                  <ul className="py-1 md:py-2 text-right" key={item.name}>
+                  <ul
+                    className="py-1 md:py-2 text-right font-medium text-gray-600"
+                    key={item.name}
+                  >
                     <Link key={item.name} href={item.href ? item.href : "/"}>
                       {item.name}
                     </Link>
@@ -90,7 +93,10 @@ const Footer = () => {
               </div>
               <div className="mt-5">
                 {footer.moreGettingZarinPal.map((item) => (
-                  <ul className="py-1 md:py-2 text-right" key={item.name}>
+                  <ul
+                    className="py-1 md:py-2 text-right font-medium text-gray-600"
+                    key={item.name}
+                  >
                     <Link key={item.name} href={item.href ? item.href : "/"}>
                       {item.name}
                     </Link>
@@ -106,7 +112,10 @@ const Footer = () => {
               </div>
               <div className="mt-5">
                 {footer.moreProducts.map((item) => (
-                  <ul className="py-1 md:py-2 text-right" key={item.name}>
+                  <ul
+                    className="py-1 md:py-2 text-right font-medium text-gray-600"
+                    key={item.name}
+                  >
                     <Link key={item.name} href={item.href ? item.href : "/"}>
                       {item.name}
                     </Link>
