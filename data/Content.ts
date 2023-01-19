@@ -4,6 +4,7 @@ export interface TContent {
   Section3: Section3[];
   Section4: Section4[];
   Section5: Section5[];
+  Section6: Section6[];
   Register: Register[];
   Login: Login[];
   ShareRequest: ShareRequest[];
@@ -11,6 +12,7 @@ export interface TContent {
   MakeZarinLink: MakeZarinLink[];
   RequestCard: RequestCard[];
   moreAbout: moreAbout[];
+  JoinZarinPlus: JoinZarinPlus[];
 }
 export interface Section1 {
   name: string;
@@ -27,7 +29,14 @@ export interface Section4 {
 export interface Section5 {
   name: string;
 }
+export interface Section6 {
+  name: string;
+}
 export interface RequestCard {
+  name: string;
+  href?: string;
+}
+export interface JoinZarinPlus {
   name: string;
   href?: string;
 }
@@ -64,6 +73,7 @@ export const ContentMain: TContent = {
   MakeZarinLink: [{ name: "ساخت زرین لینک", href: "/" }],
   RequestCard: [{ name: "درخواست زرین کارت", href: "/" }],
   ShareRequest: [{ name: "درخواست فعال سازی تسهیم", href: "/" }],
+  JoinZarinPlus: [{ name: "پیوستن به زرین پلاس", href: "/" }],
   Section1: [
     { name: "بیش از ۱۲ سال" },
     { name: "انتخاب مطمئنِ کسب و کارهای آنلاین" },
@@ -97,6 +107,13 @@ export const ContentMain: TContent = {
     { name: "درگاه پرداخت اشتراکی" },
     {
       name: "تسهیم بهترین روش برای مدیریت مالی کسب‌ و کارهای شراکتی است که به واسطه‌ی آن، درآمد حاصل از فروش محصولات یا خدمات، در سهم‌های ثابت یا متغیر میان شرکای تجاری تقسیم شده و به صورت جداگانه به حساب هر شخص واریز می‌‌شود",
+    },
+  ],
+  Section6: [
+    { name: "زرین پلاس" },
+    { name: "ابزار هوشمند سوددهی" },
+    {
+      name: "زرین‌پلاس محصولی از زرین‌پال، فرصتی فراهم کرده است تا کسب و کارها در هر اندازه و دسته‌بندی شغلی، با در دست داشتن ابزاری قدرتمند برای وفادارسازی مشتریان و افزایش فروش محصولات خود، بتوانند کسب و کار خود را به بهترین شکل توسعه و گسترش دهند و جایگاه برترین فروشگاه منطقه را به خود اختصاص دهند",
     },
   ],
 };
