@@ -3,8 +3,10 @@ export interface TContent {
   Section2: Section2[];
   Section3: Section3[];
   Section4: Section4[];
+  Section5: Section5[];
   Register: Register[];
   Login: Login[];
+  ShareRequest: ShareRequest[];
   Makepayment: Makepayment[];
   MakeZarinLink: MakeZarinLink[];
   RequestCard: RequestCard[];
@@ -20,6 +22,9 @@ export interface Section3 {
   name: string;
 }
 export interface Section4 {
+  name: string;
+}
+export interface Section5 {
   name: string;
 }
 export interface RequestCard {
@@ -46,6 +51,10 @@ export interface Login {
   name: string;
   href?: string;
 }
+export interface ShareRequest {
+  name: string;
+  href?: string;
+}
 
 export const ContentMain: TContent = {
   Register: [{ name: "ثبت نام", href: "/" }],
@@ -54,6 +63,7 @@ export const ContentMain: TContent = {
   moreAbout: [{ name: "بیشتر بدانید", href: "/" }],
   MakeZarinLink: [{ name: "ساخت زرین لینک", href: "/" }],
   RequestCard: [{ name: "درخواست زرین کارت", href: "/" }],
+  ShareRequest: [{ name: "درخواست فعال سازی تسهیم", href: "/" }],
   Section1: [
     { name: "بیش از ۱۲ سال" },
     { name: "انتخاب مطمئنِ کسب و کارهای آنلاین" },
@@ -80,6 +90,13 @@ export const ContentMain: TContent = {
     { name: "طلایی‌ترین کارتِ بانکی" },
     {
       name: "زرین‌‌کارت یک کارتِ بانکی عضو شبکه‌‌ی شتاب و متصل به یک حساب بانکی است که از تمام ویژگی‌‌ها و امکانات یک حساب بانکی تمام عیار برخوردار است. زرین‌‌کارت این امکان را برای کاربران خود فراهم می‌‌سازد تا از تعرفه‌‌ی کارمزد کم‌‌تر در روزهای عادی و کارمزد رایگان در سه‌‌شنبه‌‌های طلاییِ زرین‌‌پال بهره‌‌مند شوند",
+    },
+  ],
+  Section5: [
+    { name: "تسهیم" },
+    { name: "درگاه پرداخت اشتراکی" },
+    {
+      name: "تسهیم بهترین روش برای مدیریت مالی کسب‌ و کارهای شراکتی است که به واسطه‌ی آن، درآمد حاصل از فروش محصولات یا خدمات، در سهم‌های ثابت یا متغیر میان شرکای تجاری تقسیم شده و به صورت جداگانه به حساب هر شخص واریز می‌‌شود",
     },
   ],
 };
