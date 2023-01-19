@@ -89,11 +89,11 @@ const SectionTwo = () => {
 
 const SectionThree = () => {
   return (
-    <div className="container flex w-full mx-auto pt-10 xl:w-3/4 lg:pt-24 lg:flex">
-      <div className="lg:flex flex-1 hidden">
+    <div className="container flex w-full mx-auto pt-10 sm:flex-col-reverse xl:w-3/4 lg:pt-24 lg:flex-row">
+      <div className="hidden sm:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:mt-0">
         <Image
           src="assets/social-image.svg"
-          alt="social-image.svg"
+          alt="socialimage"
           width={600}
           height={600}
         />
@@ -128,12 +128,54 @@ const SectionThree = () => {
   );
 };
 
+const Sectionfour = () => {
+  return (
+    <div className="container flex sm:flex-col-reverse w-full mx-auto lg:flex-row lg:pt-20 xl:w-2/3">
+      <div className="flex flex-col flex-1 text-center md:text-right mx-10">
+        <p className="text-xl text-gray-600 font-medium">
+          {ContentMain.Section4[0].name}
+        </p>
+        <p className="text-2xl font-bold py-4">
+          {ContentMain.Section4[1].name}
+        </p>
+        <p className="text-gray-600 font-medium">
+          {ContentMain.Section4[2].name}
+        </p>
+        <div className="my-8">
+          <hr />
+        </div>
+        <div className="flex justify-center lg:justify-end">
+          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+            <BiLeftArrowAlt className="mt-1 text-lg" />
+            <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+          </p>
+          <Link
+            className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
+            href="/"
+          >
+            {ContentMain.RequestCard[0].name}
+          </Link>
+        </div>
+      </div>
+      <div className="hidden sm:flex sm:mx-auto sm:top-10 relative xl:left-20">
+        <Image
+          src="assets/zarincard .svg"
+          alt="zarincard"
+          width={415}
+          height={300}
+        />
+      </div>
+    </div>
+  );
+};
+
 const Content = () => {
   return (
     <>
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <Sectionfour />
     </>
   );
 };
