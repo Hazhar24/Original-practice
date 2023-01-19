@@ -169,6 +169,47 @@ const Sectionfour = () => {
   );
 };
 
+const Sectionfive = () => {
+  return (
+    <div className="container flex w-full mx-auto pt-10 sm:flex-col-reverse xl:w-3/4 lg:pt-16 lg:flex-row">
+      <div className="hidden sm:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:mt-0">
+        <Image
+          src="assets/payout.svg"
+          alt="socialimage"
+          width={500}
+          height={400}
+        />
+      </div>
+      <div className="flex flex-1 flex-col text-center mx-10 lg:ml-5 md:text-right lg:mt-14">
+        <p className="text-xl text-gray-600 font-medium">
+          {ContentMain.Section5[0].name}
+        </p>
+        <p className="text-2xl font-bold py-4">
+          {ContentMain.Section5[1].name}
+        </p>
+        <p className="text-gray-600 font-medium">
+          {ContentMain.Section5[2].name}
+        </p>
+        <div className=" my-8">
+          <hr />
+        </div>
+        <div className="flex justify-center lg:justify-end">
+          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+            <BiLeftArrowAlt className="mt-1 text-lg" />
+            <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+          </p>
+          <Link
+            className="border h-9 flex items-center rounded-lg justify-center w-48 bg-yellow-400 text-sm"
+            href="/"
+          >
+            {ContentMain.ShareRequest[0].name}
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Content = () => {
   return (
     <>
@@ -176,6 +217,7 @@ const Content = () => {
       <SectionTwo />
       <SectionThree />
       <Sectionfour />
+      <Sectionfive />
     </>
   );
 };
