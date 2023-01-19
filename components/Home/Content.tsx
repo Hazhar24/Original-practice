@@ -210,6 +210,47 @@ const Sectionfive = () => {
   );
 };
 
+const SectionSix = () => {
+  return (
+    <div className="container flex sm:flex-col-reverse w-full mx-auto lg:flex-row lg:pt-20 xl:w-2/3">
+      <div className="flex flex-col flex-1 mt-5 lg:mt-0 text-center md:text-right mx-10">
+        <p className="text-xl text-gray-600 font-medium">
+          {ContentMain.Section6[0].name}
+        </p>
+        <p className="text-2xl font-bold py-4">
+          {ContentMain.Section6[1].name}
+        </p>
+        <p className="text-gray-600 font-medium">
+          {ContentMain.Section6[2].name}
+        </p>
+        <div className="my-8">
+          <hr />
+        </div>
+        <div className="flex justify-center lg:justify-end">
+          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+            <BiLeftArrowAlt className="mt-1 text-lg" />
+            <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+          </p>
+          <Link
+            className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
+            href="/"
+          >
+            {ContentMain.JoinZarinPlus[0].name}
+          </Link>
+        </div>
+      </div>
+      <div className="hidden sm:flex sm:mx-auto relative xl:left-20">
+        <Image
+          src="assets/zarinplus.svg"
+          alt="zarincard"
+          width={415}
+          height={300}
+        />
+      </div>
+    </div>
+  );
+};
+
 const Content = () => {
   return (
     <>
@@ -218,6 +259,7 @@ const Content = () => {
       <SectionThree />
       <Sectionfour />
       <Sectionfive />
+      <SectionSix />
     </>
   );
 };
