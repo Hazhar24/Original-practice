@@ -2,13 +2,30 @@ export interface TContent {
   Section1: Section1[];
   Section2: Section2[];
   Section3: Section3[];
+  Section4: Section4[];
   Register: Register[];
   Login: Login[];
   Makepayment: Makepayment[];
   MakeZarinLink: MakeZarinLink[];
+  RequestCard: RequestCard[];
   moreAbout: moreAbout[];
 }
-
+export interface Section1 {
+  name: string;
+}
+export interface Section2 {
+  name: string;
+}
+export interface Section3 {
+  name: string;
+}
+export interface Section4 {
+  name: string;
+}
+export interface RequestCard {
+  name: string;
+  href?: string;
+}
 export interface MakeZarinLink {
   name: string;
   href?: string;
@@ -20,15 +37,6 @@ export interface Makepayment {
 export interface moreAbout {
   name: string;
   href?: string;
-}
-export interface Section3 {
-  name: string;
-}
-export interface Section1 {
-  name: string;
-}
-export interface Section2 {
-  name: string;
 }
 export interface Register {
   name: string;
@@ -45,6 +53,7 @@ export const ContentMain: TContent = {
   Makepayment: [{ name: "ساخت درگاه پرداخت", href: "/" }],
   moreAbout: [{ name: "بیشتر بدانید", href: "/" }],
   MakeZarinLink: [{ name: "ساخت زرین لینک", href: "/" }],
+  RequestCard: [{ name: "درخواست زرین کارت", href: "/" }],
   Section1: [
     { name: "بیش از ۱۲ سال" },
     { name: "انتخاب مطمئنِ کسب و کارهای آنلاین" },
@@ -64,6 +73,13 @@ export const ContentMain: TContent = {
     { name: "پرداخت در شبکه های اجتماعی" },
     {
       name: "زرین‌لینک با مدیریت فرآیند فروش به روشی هوشمندانه و سریع، باعث افزایش فروش محصولات و خدمات، از طریق شبکه‌های اجتماعی یا وب‌سایت می‌شود",
+    },
+  ],
+  Section4: [
+    { name: "زرین کارت" },
+    { name: "طلایی‌ترین کارتِ بانکی" },
+    {
+      name: "زرین‌‌کارت یک کارتِ بانکی عضو شبکه‌‌ی شتاب و متصل به یک حساب بانکی است که از تمام ویژگی‌‌ها و امکانات یک حساب بانکی تمام عیار برخوردار است. زرین‌‌کارت این امکان را برای کاربران خود فراهم می‌‌سازد تا از تعرفه‌‌ی کارمزد کم‌‌تر در روزهای عادی و کارمزد رایگان در سه‌‌شنبه‌‌های طلاییِ زرین‌‌پال بهره‌‌مند شوند",
     },
   ],
 };
