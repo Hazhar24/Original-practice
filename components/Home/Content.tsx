@@ -48,26 +48,28 @@ const SectionOne = () => {
     </div>
   );
 };
-
 const SectionTwo = () => {
   return (
-    <div className="container w-full mx-auto xl:w-3/4 pt-24" id="SectionTwo">
-      <div className="flex flex-wrap flex-col-reverse lg:flex lg:flex-row justify-center items-center">
-        <div className="flex flex-1 flex-col mx-10 lg:mx-0 text-center md:text-right">
-          <p className="text-2xl text-slate-600 font-medium">
+    <div
+      className="container w-full mx-auto xl:w-3/4 pt-24 px-10"
+      id="SectionTwo"
+    >
+      <div className="flex flex-wrap flex-col-reverse justify-center items-center lg:flex lg:flex-row">
+        <div className="flex flex-1 flex-col lg:pr-14 text-center md:justify-end md:text-right">
+          <p className="text-2xl text-slate-500 font-medium">
             {ContentMain.Section2[0].name}
           </p>
           <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
             {ContentMain.Section2[1].name}
           </p>
-          <p className=" text-center mx-5 md:mx-0 font-medium text-gray-600">
+          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
             {ContentMain.Section2[2].name}
           </p>
           <div className=" my-8">
             <hr />
           </div>
           <div className="flex justify-center lg:justify-end">
-            <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+            <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
               <BiLeftArrowAlt className="mt-1 text-lg" />
               <Link href="/">{ContentMain.moreAbout[0].name}</Link>
             </p>
@@ -79,18 +81,17 @@ const SectionTwo = () => {
             </Link>
           </div>
         </div>
-        <div className=" hidden sm:flex flex-1 relative bottom-10 xl:left-20">
-          <Image src="assets/pg.svg" alt="pgsvg" width={450} height={450} />
+        <div className="hidden sm:flex flex-1">
+          <Image src="assets/pg.svg" alt="pgsvg" width={500} height={500} />
         </div>
       </div>
     </div>
   );
 };
-
 const SectionThree = () => {
   return (
-    <div className="container flex w-full mx-auto pt-10 sm:flex-col-reverse xl:w-3/4 lg:pt-24 lg:flex-row">
-      <div className="hidden sm:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:mt-0">
+    <div className="container flex w-full mx-auto pt-10 sm:flex-col-reverse xl:w-3/4 lg:pt-16 px-10 lg:flex-row">
+      <div className="hidden sm:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:mt-0 lg:mr-10">
         <Image
           src="assets/social-image.svg"
           alt="socialimage"
@@ -98,21 +99,21 @@ const SectionThree = () => {
           height={600}
         />
       </div>
-      <div className="flex flex-1 flex-col text-center mx-10 lg:mx-0 md:text-right lg:mt-14">
-        <p className="text-xl text-gray-600 font-medium">
+      <div className="flex flex-1 flex-col text-center md:text-right lg:mt-14 lg:text-end">
+        <p className="text-2xl text-slate-500 font-medium">
           {ContentMain.Section3[0].name}
         </p>
-        <p className="text-2xl font-bold py-4">
+        <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
           {ContentMain.Section3[1].name}
         </p>
-        <p className="text-gray-600 font-medium">
+        <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
           {ContentMain.Section3[2].name}
         </p>
         <div className=" my-8">
           <hr />
         </div>
         <div className="flex justify-center lg:justify-end">
-          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
             <BiLeftArrowAlt className="mt-1 text-lg" />
             <Link href="/">{ContentMain.moreAbout[0].name}</Link>
           </p>
@@ -127,52 +128,52 @@ const SectionThree = () => {
     </div>
   );
 };
-
 const Sectionfour = () => {
   return (
-    <div className="container flex sm:flex-col-reverse w-full mx-auto lg:flex-row lg:pt-20 xl:w-2/3">
-      <div className="flex flex-col flex-1 text-center md:text-right mx-10">
-        <p className="text-xl text-gray-600 font-medium">
-          {ContentMain.Section4[0].name}
-        </p>
-        <p className="text-2xl font-bold py-4">
-          {ContentMain.Section4[1].name}
-        </p>
-        <p className="text-gray-600 font-medium">
-          {ContentMain.Section4[2].name}
-        </p>
-        <div className="my-8">
-          <hr />
-        </div>
-        <div className="flex justify-center lg:justify-end">
-          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
-            <BiLeftArrowAlt className="mt-1 text-lg" />
-            <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+    <div className="container w-full mx-auto xl:w-3/4 pt-24 px-10 ">
+      <div className="flex flex-wrap flex-col-reverse justify-center items-center lg:flex lg:flex-row">
+        <div className="flex flex-1 flex-col lg:pr-14 text-center md:justify-end md:text-right">
+          <p className="text-2xl text-slate-500 font-medium">
+            {ContentMain.Section4[0].name}
           </p>
-          <Link
-            className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
-            href="/"
-          >
-            {ContentMain.RequestCard[0].name}
-          </Link>
+          <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
+            {ContentMain.Section4[1].name}
+          </p>
+          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
+            {ContentMain.Section4[2].name}
+          </p>
+          <div className=" my-8">
+            <hr />
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
+              <BiLeftArrowAlt className="mt-1 text-lg" />
+              <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+            </p>
+            <Link
+              className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
+              href="/"
+            >
+              {ContentMain.RequestCard[0].name}
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="hidden sm:flex sm:mx-auto sm:top-10 relative xl:left-20">
-        <Image
-          src="assets/zarincard .svg"
-          alt="zarincard"
-          width={415}
-          height={300}
-        />
+        <div className=" hidden sm:flex flex-1 relative xl:left-20">
+          <Image
+            src="assets/zarincard .svg"
+            alt="pgsvg"
+            width={450}
+            height={300}
+          />
+        </div>
       </div>
     </div>
   );
 };
-
 const Sectionfive = () => {
   return (
-    <div className="container flex w-full mx-auto pt-10 sm:flex-col-reverse xl:w-3/4 lg:pt-16 lg:flex-row">
-      <div className="hidden sm:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:mt-0">
+    <div className="container flex w-full mx-auto pt-10 sm:flex-col-reverse xl:w-3/4 lg:pt-16 px-12 lg:flex-row">
+      <div className="hidden md:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:mt-0 lg:mr-10">
         <Image
           src="assets/payout.svg"
           alt="socialimage"
@@ -180,21 +181,21 @@ const Sectionfive = () => {
           height={400}
         />
       </div>
-      <div className="flex flex-1 flex-col text-center mx-10 lg:ml-5 md:text-right lg:mt-14">
-        <p className="text-xl text-gray-600 font-medium">
+      <div className="flex flex-1 flex-col text-center md:text-right lg:mt-14 lg:text-end">
+        <p className="text-2xl text-slate-500 font-medium">
           {ContentMain.Section5[0].name}
         </p>
-        <p className="text-2xl font-bold py-4">
+        <p className="text-xl lg:text-3xl text-slate-800 py-5 font-bold">
           {ContentMain.Section5[1].name}
         </p>
-        <p className="text-gray-600 font-medium">
+        <p className="text-center xl:text-right md:mx-0 font-medium text-gray-500">
           {ContentMain.Section5[2].name}
         </p>
         <div className=" my-8">
           <hr />
         </div>
         <div className="flex justify-center lg:justify-end">
-          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
+          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
             <BiLeftArrowAlt className="mt-1 text-lg" />
             <Link href="/">{ContentMain.moreAbout[0].name}</Link>
           </p>
@@ -212,40 +213,42 @@ const Sectionfive = () => {
 
 const SectionSix = () => {
   return (
-    <div className="container flex sm:flex-col-reverse w-full mx-auto lg:flex-row lg:pt-20 xl:w-2/3">
-      <div className="flex flex-col flex-1 mt-5 lg:mt-0 text-center md:text-right mx-10">
-        <p className="text-xl text-gray-600 font-medium">
-          {ContentMain.Section6[0].name}
-        </p>
-        <p className="text-2xl font-bold py-4">
-          {ContentMain.Section6[1].name}
-        </p>
-        <p className="text-gray-600 font-medium">
-          {ContentMain.Section6[2].name}
-        </p>
-        <div className="my-8">
-          <hr />
-        </div>
-        <div className="flex justify-center lg:justify-end">
-          <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-8 bg-sky-100 text-blue-800 ">
-            <BiLeftArrowAlt className="mt-1 text-lg" />
-            <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+    <div className="container w-full mx-auto xl:w-3/4 pt-24 px-10">
+      <div className="flex flex-wrap flex-col-reverse justify-center items-center lg:flex lg:flex-row">
+        <div className="flex flex-1 flex-col lg:pr-14 text-center md:justify-end md:text-right">
+          <p className="text-2xl text-slate-500 font-medium">
+            {ContentMain.Section6[0].name}
           </p>
-          <Link
-            className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
-            href="/"
-          >
-            {ContentMain.JoinZarinPlus[0].name}
-          </Link>
+          <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
+            {ContentMain.Section6[1].name}
+          </p>
+          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
+            {ContentMain.Section6[2].name}
+          </p>
+          <div className=" my-8">
+            <hr />
+          </div>
+          <div className="flex justify-center lg:justify-end">
+            <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
+              <BiLeftArrowAlt className="mt-1 text-lg" />
+              <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+            </p>
+            <Link
+              className="border h-9 flex items-center rounded-lg justify-center w-36 bg-yellow-400 text-sm"
+              href="/"
+            >
+              {ContentMain.JoinZarinPlus[0].name}
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="hidden sm:flex sm:mx-auto relative xl:left-20">
-        <Image
-          src="assets/zarinplus.svg"
-          alt="zarincard"
-          width={415}
-          height={300}
-        />
+        <div className=" hidden md:flex flex-1 relative xl:left-20">
+          <Image
+            src="assets/zarinplus.svg"
+            alt="pgsvg"
+            width={450}
+            height={450}
+          />
+        </div>
       </div>
     </div>
   );
