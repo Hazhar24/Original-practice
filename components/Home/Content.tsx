@@ -19,7 +19,7 @@ const SectionOne = () => {
           <p className="text-xl sm:text-2xl pb-5 lg:pb-10 font-bold">
             {ContentMain.Section1[1].name}
           </p>
-          <p className="font-medium text-justify lg:text-center">
+          <p className="font-medium text-justify lg:text-center leading-10">
             {ContentMain.Section1[2].name}
           </p>
           <div className="flex justify-center lg:justify-end mt-16">
@@ -62,7 +62,7 @@ const SectionTwo = () => {
           <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
             {ContentMain.Section2[1].name}
           </p>
-          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
+          <p className="text-center xl:text-right md:mx-0 font-medium leading-10 text-gray-500">
             {ContentMain.Section2[2].name}
           </p>
           <div className=" my-8">
@@ -106,7 +106,7 @@ const SectionThree = () => {
         <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
           {ContentMain.Section3[1].name}
         </p>
-        <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
+        <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500 leading-10">
           {ContentMain.Section3[2].name}
         </p>
         <div className=" my-8">
@@ -139,7 +139,7 @@ const Sectionfour = () => {
           <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
             {ContentMain.Section4[1].name}
           </p>
-          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
+          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500 leading-10">
             {ContentMain.Section4[2].name}
           </p>
           <div className=" my-8">
@@ -188,7 +188,7 @@ const Sectionfive = () => {
         <p className="text-xl lg:text-3xl text-slate-800 py-5 font-bold">
           {ContentMain.Section5[1].name}
         </p>
-        <p className="text-center xl:text-right md:mx-0 font-medium text-gray-500">
+        <p className="text-center xl:text-right md:mx-0 font-medium text-gray-500 leading-10">
           {ContentMain.Section5[2].name}
         </p>
         <div className=" my-8">
@@ -222,7 +222,7 @@ const SectionSix = () => {
           <p className=" text-xl lg:text-3xl text-slate-800 py-5 font-bold">
             {ContentMain.Section6[1].name}
           </p>
-          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500">
+          <p className=" text-center xl:text-right md:mx-0 font-medium text-gray-500 leading-10">
             {ContentMain.Section6[2].name}
           </p>
           <div className=" my-8">
