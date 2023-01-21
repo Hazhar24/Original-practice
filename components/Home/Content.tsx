@@ -56,7 +56,7 @@ const SectionTwo = () => {
         <div className="hidden sm:flex flex-1 relative lg:justify-start">
           <Image src="assets/pg.svg" alt="pgsvg" width={450} height={500} />
         </div>
-        <div className="flex flex-1 flex-col text-center mx-10 md:justify-end md:text-right lg:mx-0 lg:pr-14 lg:justify-end">
+        <div className="flex flex-1 flex-col text-center mx-10 md:justify-end md:text-right lg:mx-0 lg:justify-end">
           <p className="text-2xl text-slate-500 font-medium">
             {ContentMain.Section2[0].name}
           </p>
@@ -117,7 +117,7 @@ const SectionThree = () => {
           </p>
         </div>
       </div>
-      <div className="hidden sm:flex sm:mx-auto lg:flex flex-1 md:mt-10 lg:justify-end ">
+      <div className="hidden sm:flex sm:mx-auto flex-1 md:mt-10 lg:flex lg:justify-end ">
         <Image
           src="assets/social-image.svg"
           alt="socialimage"
@@ -140,7 +140,7 @@ const Sectionfour = () => {
             height={300}
           />
         </div>
-        <div className="flex flex-1 flex-col text-center mx-10 lg:mx-0 md:justify-end md:text-right lg:pr-14 lg:justify-end">
+        <div className="flex flex-1 flex-col text-center mx-10 lg:mx-0 md:justify-end md:text-right lg:justify-end">
           <p className="text-2xl text-slate-500 font-medium">
             {ContentMain.Section4[0].name}
           </p>
@@ -225,7 +225,7 @@ const SectionSix = () => {
             height={450}
           />
         </div>
-        <div className="flex flex-1 flex-col lg:pr-14 text-center mx-10 lg:mx-0 md:justify-end md:text-right lg:justify-end">
+        <div className="flex flex-1 flex-col text-center mx-10 lg:mx-0 md:justify-end md:text-right lg:justify-end">
           <p className="text-2xl text-slate-500 font-medium">
             {ContentMain.Section6[0].name}
           </p>

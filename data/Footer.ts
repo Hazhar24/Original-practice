@@ -56,9 +56,9 @@ export interface socialNetworks {
 
 export const footer: Tfooter = {
   support: [
-    { name: "021-41239 : شماره تماس" },
-    { name: "|" },
     { name: "پشتیبانی 24 ساعته 7روز هفته" },
+    { name: "|" },
+    { name: " شماره تماس:021-41239 "},
   ],
   moreSources: [
     { name: "دریافت شماره شبا", href: "/" },
@@ -92,7 +92,7 @@ export const footer: Tfooter = {
   gettingZarinPal: [{ name: "آشنایی با زرین پال" }],
   products: [{ name: "محصولات" }],
 
-  socialNetworks: [{ name: ": زرین پال در شبکه های اجتماعی" }],
+  socialNetworks: [{ name: "زرین پال در شبکه های اجتماعی:" }],
   button: [{ name: "درخواست پشتیبانی", href: "/" }],
   zaripal: [{ name: "زرین‌پال ۱۴۰۱-۱۳۸۹©" }],
 };

@@ -8,23 +8,99 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto w-full md:w-full xl:w-3/4">
-      <div className="flex flex-col-reverse text-sm h-16 items-center container mx-auto md:flex-row md:justify-between md:font-bold md:text-lg md:border md:rounded-full md:bg-slate-100 md:px-3  lg:px-7 mt-14">
-        <div className="flex items-center pt-3 md:pt-0 text-blue-800">
-          <BiLeftArrowAlt className="md:text-xl mt-1" />
-          <Link href="/">{footer.button[0].name}</Link>
-        </div>
+    <footer className="container mx-auto w-full md:w-full xl:w-3/4 ">
+      <div className="flex flex-col-reverse text-sm h-16 items-center container mx-auto md:flex-row md:justify-between md:font-bold md:text-lg md:border md:rounded-full md:bg-slate-100 md:px-3 lg:px-7 mt-14">
         <div className="flex">
           {footer.support.map((item) => (
             <div key={item.name}>
               <div className="px-1 text-center">{item.name}</div>
             </div>
           ))}
+        </div>{" "}
+        <div className="flex items-center pt-3 md:pt-0 text-blue-800">
+          <BiLeftArrowAlt className="md:text-xl mt-1" />
+          <Link href="/">{footer.button[0].name}</Link>
         </div>
       </div>
-      <div className="flex flex-col-reverse w-full mx-auto mt-12 lg:flex-row lg:items-start">
-        <div className="flex flex-col w-72 justify-center mx-auto mt-10 md:mt-0">
-          <div className="font-bold text-gray-900 text-center md:text-right ">
+      <div className="flex flex-col w-full mx-auto mt-12 lg:flex-row lg:items-start">
+        <div className="grid grid-cols-2 mx-auto flex-1 lg:ml-24 gap-x-8 gap-y-4 sm:gap-x-14 sm:gap-y-8 md:grid-cols-4 md:gap-x-12 lg:flex lg:justify-between lg:gap-x-2 ">
+          <div>
+            <div className="text-sm">
+              <div className="text-right text-lg font-bold">
+                {footer.products[0].name}
+              </div>
+              <div className="mt-5">
+                {footer.moreProducts.map((item) => (
+                  <ul
+                    className="py-1 md:py-2 text-right font-medium text-gray-600"
+                    key={item.name}
+                  >
+                    <Link key={item.name} href={item.href ? item.href : "/"}>
+                      {item.name}
+                    </Link>
+                  </ul>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="text-sm">
+              <div className="text-right text-lg font-bold">
+                {footer.gettingZarinPal[0].name}
+              </div>
+              <div className="mt-5">
+                {footer.moreGettingZarinPal.map((item) => (
+                  <ul
+                    className="py-1 md:py-2 text-right font-medium text-gray-600"
+                    key={item.name}
+                  >
+                    <Link key={item.name} href={item.href ? item.href : "/"}>
+                      {item.name}
+                    </Link>
+                  </ul>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="text-sm">
+              <div className="text-right text-lg font-bold">
+                {footer.communication[0].name}
+              </div>
+              <div className="mt-5">
+                {footer.morecommunication.map((item) => (
+                  <ul
+                    className="py-1 md:py-2 text-right font-medium text-gray-600"
+                    key={item.name}
+                  >
+                    <Link key={item.name} href={item.href ? item.href : "/"}>
+                      {item.name}
+                    </Link>
+                  </ul>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="text-sm">
+            <div className="text-right text-lg font-bold">
+              {footer.sources[0].name}
+            </div>
+            <div className="mt-5">
+              {footer.moreSources.map((item) => (
+                <ul className="py-1 md:py-2 text-right font-medium text-gray-600">
+                  <Link key={item.name} href={item.href ? item.href : "/"}>
+                    {item.name}
+                  </Link>
+                </ul>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col w-72 mx-auto mt-10 md:mt-10">
+          <div className="font-bold text-gray-900 text-center">
             {footer.socialNetworks[0].name}
           </div>
           <div className="flex text-2xl text-blue-900 mt-4">
@@ -50,79 +126,6 @@ const Footer = () => {
               width={80}
               height={32}
             ></img>
-          </div>
-        </div>
-        <div className="grid grid-cols-2 mx-auto flex-1 lg:ml-24 gap-x-8 gap-y-4 sm:gap-x-14 sm:gap-y-8 md:grid-cols-4 md:gap-x-12 lg:flex lg:justify-between lg:gap-x-2 ">
-          <div className="text-sm">
-            <div className="text-right text-lg font-bold">
-              {footer.sources[0].name}
-            </div>
-            <div className="mt-5">
-              {footer.moreSources.map((item) => (
-                <ul className="py-1 md:py-2 text-right font-medium text-gray-600">
-                  <Link key={item.name} href={item.href ? item.href : "/"}>
-                    {item.name}
-                  </Link>
-                </ul>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="text-sm">
-              <div className="text-right text-lg font-bold">
-                {footer.communication[0].name}
-              </div>
-              <div className="mt-5">
-                {footer.morecommunication.map((item) => (
-                  <ul
-                    className="py-1 md:py-2 text-right font-medium text-gray-600"
-                    key={item.name}
-                  >
-                    <Link key={item.name} href={item.href ? item.href : "/"}>
-                      {item.name}
-                    </Link>
-                  </ul>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="text-sm">
-              <div className="text-right text-lg font-bold">
-                {footer.gettingZarinPal[0].name}
-              </div>
-              <div className="mt-5">
-                {footer.moreGettingZarinPal.map((item) => (
-                  <ul
-                    className="py-1 md:py-2 text-right font-medium text-gray-600"
-                    key={item.name}
-                  >
-                    <Link key={item.name} href={item.href ? item.href : "/"}>
-                      {item.name}
-                    </Link>
-                  </ul>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="text-sm">
-              <div className="text-right text-lg font-bold">
-                {footer.products[0].name}
-              </div>
-              <div className="mt-5">
-                {footer.moreProducts.map((item) => (
-                  <ul
-                    className="py-1 md:py-2 text-right font-medium text-gray-600"
-                    key={item.name}
-                  >
-                    <Link key={item.name} href={item.href ? item.href : "/"}>
-                      {item.name}
-                    </Link>
-                  </ul>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>
