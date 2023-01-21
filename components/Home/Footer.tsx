@@ -18,8 +18,8 @@ const Footer = () => {
           ))}
         </div>{" "}
         <div className="flex items-center pt-3 md:pt-0 text-blue-800">
-          <BiLeftArrowAlt className="md:text-xl mt-1" />
           <Link href="/">{footer.button[0].name}</Link>
+          <BiLeftArrowAlt className="md:text-xl mt-1" />
         </div>
       </div>
       <div className="flex flex-col w-full mx-auto mt-12 lg:flex-row lg:items-start">

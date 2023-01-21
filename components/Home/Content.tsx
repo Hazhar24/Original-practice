@@ -78,8 +78,8 @@ const SectionTwo = () => {
               {ContentMain.Makepayment[0].name}
             </Link>
             <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
-              <BiLeftArrowAlt className="mt-1 text-lg" />
               <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+              <BiLeftArrowAlt className="mt-1 text-lg" />
             </p>
           </div>
         </div>
@@ -112,8 +112,8 @@ const SectionThree = () => {
             {ContentMain.MakeZarinLink[0].name}
           </Link>
           <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
-            <BiLeftArrowAlt className="mt-1 text-lg" />
             <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+            <BiLeftArrowAlt className="mt-1 text-lg" />
           </p>
         </div>
       </div>
@@ -162,8 +162,8 @@ const Sectionfour = () => {
               {ContentMain.RequestCard[0].name}
             </Link>
             <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
-              <BiLeftArrowAlt className="mt-1 text-lg" />
               <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+              <BiLeftArrowAlt className="mt-1 text-lg" />
             </p>
           </div>
         </div>
@@ -196,8 +196,8 @@ const Sectionfive = () => {
             {ContentMain.ShareRequest[0].name}
           </Link>
           <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
-            <BiLeftArrowAlt className="mt-1 text-lg" />
             <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+            <BiLeftArrowAlt className="mt-1 text-lg" />
           </p>
         </div>
       </div>
@@ -212,7 +212,6 @@ const Sectionfive = () => {
     </div>
   );
 };
-
 const SectionSix = () => {
   return (
     <div className="container w-full mx-auto xl:w-3/4 pt-24">
@@ -247,8 +246,100 @@ const SectionSix = () => {
               {ContentMain.JoinZarinPlus[0].name}
             </Link>
             <p className="border h-9 flex items-center rounded-lg justify-center w-28 mx-2 bg-sky-100 text-blue-800 ">
-              <BiLeftArrowAlt className="mt-1 text-lg" />
               <Link href="/">{ContentMain.moreAbout[0].name}</Link>
+              <BiLeftArrowAlt className="mt-1 text-lg" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SectionSeven = () => {
+  return (
+    <div className="container w-full mx-auto xl:w-3/4 pt-20 flex">
+      <div className="w-1/3 pt-9">
+        <p className="font-bold text-2xl text-slate-800">
+          {ContentMain.Section7[0].name}
+        </p>
+        <p className="pt-10 text-justify text-slate-500">
+          {ContentMain.Section7[1].name}
+        </p>
+      </div>
+      <div className=" w-2/3 mr-20 grid grid-cols-2">
+        <div className="p-9">
+          <div className="text-2xl font-bold text-slate-800 flex">
+            <div className="pl-5">
+              <Image
+                src="assets/verifiedIcon.svg"
+                alt="splite"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="pt-2">{ContentMain.Section8[0].name}</div>
+          </div>
+          <div>
+            <p className=" text-slate-500 text-justify pt-5">
+              {ContentMain.Section8[1].name}
+            </p>
+          </div>
+        </div>
+
+        <div className="border-b border-r p-9">
+          <div className="text-2xl font-bold text-slate-800 flex">
+            <div className="pl-5">
+              <Image
+                src="assets/splite.svg"
+                alt="splite"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="pt-2">{ContentMain.Section9[0].name}</div>
+          </div>
+          <div>
+            <p className=" text-slate-500 text-justify pt-5">
+              {ContentMain.Section9[1].name}
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-l p-9">
+          <div className="text-2xl font-bold text-slate-800 flex">
+            <div className="pl-5">
+              <Image
+                src="assets/supportt.svg"
+                alt="splite"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="pt-2">{ContentMain.Section10[0].name}</div>
+          </div>
+          <div>
+            <p className=" text-slate-500 text-justify pt-5">
+              {ContentMain.Section10[1].name}
+            </p>
+          </div>
+        </div>
+
+        <div className="p-9">
+          <div className="text-2xl font-bold text-slate-800 flex">
+            <div className="pl-5">
+              <Image
+                src="assets/supportt.svg"
+                alt="splite"
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className="pt-2">{ContentMain.Section11[0].name}</div>
+          </div>
+          <div>
+            <p className=" text-slate-500 text-justify pt-5">
+              {ContentMain.Section11[1].name}
             </p>
           </div>
         </div>
@@ -266,6 +357,7 @@ const Content = () => {
       <Sectionfour />
       <Sectionfive />
       <SectionSix />
+      <SectionSeven />
     </div>
   );
 };
