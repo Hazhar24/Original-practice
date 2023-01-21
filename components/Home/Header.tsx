@@ -42,15 +42,15 @@ function SubMenuWithDescription(props: headerTypes.desktopMenu) {
     <>
       <li className="group relative dropdown px-2 lg:px-4 cursor-pointer">
         <a className="flex items-center">
-          <IoIosArrowDown className="mx-2" />
           {props.name}
+          <IoIosArrowDown className="mx-2" />
         </a>
         <div className="group-hover:block absolute hidden h-auto -right-40">
-          <ul className="w-96 bg-white shadow flex flex-wrap justify-end p-3 border-t-4 border-yellow-300 rounded-2xl mt-5">
+          <ul className="w-96 h-56 bg-white shadow flex flex-wrap p-2 border-t-4 border-yellow-300 rounded-2xl mt-5">
             {props.submenu?.map((smenu) => (
               <li
                 key={smenu.name}
-                className="w-1/2 hover:bg-sky-100 h-14 rounded-lg p-2 text-right"
+                className="w-1/2 hover:bg-sky-100 h-14 rounded-lg p-1 text-right"
               >
                 <a href={smenu.href}>
                   <div>
@@ -70,10 +70,10 @@ function SubMenuWithDescription(props: headerTypes.desktopMenu) {
 function SubMenu(props: headerTypes.desktopMenu) {
   return (
     <>
-      <li className="group relative dropdown px-2 lg:px-4 cursor-pointer">
+      <li className="group relative dropdown px-3 lg:px-5 cursor-pointer">
         <a className="flex items-center">
-          <IoIosArrowDown className="mx-2" />
           {props.name}
+          <IoIosArrowDown className="mx-2" />
         </a>
         <div className="group-hover:block absolute hidden h-auto -right-10">
           <ul className="w-40 bg-white shadow flex-row p-3 border-t-4 border-yellow-300 rounded-2xl mt-5">
@@ -128,12 +128,12 @@ export default function Header() {
   return (
     <div>
       <div className="text-3xl border h-16 flex flex-row justify-between items-center p-2 md:hidden">
-        <button onClick={() => setOpen(!open)}>
-          <IoMdMenu name={`${open ? "close" : "menu"}`} />
-        </button>
         <div>
           <Logo />
         </div>
+        <button onClick={() => setOpen(!open)}>
+          <IoMdMenu name={`${open ? "close" : "menu"}`} />
+        </button>
       </div>
       <ul
         className={`absolute w-full bg-white md:hidden text-right lg:hidden mt-16 duration-500 ${
@@ -149,20 +149,20 @@ export default function Header() {
             {item.name}
           </Link>
         ))}
-        <div className="border w-full bg-blue-100 h-16 flex justify-end text-blue-900 items-center pr-20">
-          <div>
-            <BiLeftArrowAlt className="text-xl m-2" />
-          </div>
+        <div className="border w-full bg-blue-100 h-16 flex justify-start text-blue-900 items-center pr-20">
           <Link href="/">{header.button[0].name}</Link>
+          <div>
+            <BiLeftArrowAlt className="text-xl m-2 mb-1" />
+          </div>
         </div>
       </ul>
       <div className="container hidden mx-auto mt-3 text-sm border-b h-16 md:w-full md:flex w-3/4 lg:w-full lg:mx-auto xl:w-3/4 xl:mx-auto">
         <div className="flex flex-1 items-center">
-          <LoginButton />
-          <ul className="w-full flex flex-row">
+          <Logo />
+          <ul className="w-full flex flex-row justify-end">
             <Menu />
           </ul>
-          <Logo />
+          <LoginButton />
         </div>
       </div>
     </div>
