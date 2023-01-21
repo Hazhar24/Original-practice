@@ -5,6 +5,11 @@ export interface TContent {
   Section4: Section4[];
   Section5: Section5[];
   Section6: Section6[];
+  Section7: Section7[];
+  Section8: Section8[];
+  Section9: Section9[];
+  Section10: Section10[];
+  Section11: Section11[];
   Register: Register[];
   Login: Login[];
   ShareRequest: ShareRequest[];
@@ -30,6 +35,21 @@ export interface Section5 {
   name: string;
 }
 export interface Section6 {
+  name: string;
+}
+export interface Section7 {
+  name: string;
+}
+export interface Section8 {
+  name: string;
+}
+export interface Section9 {
+  name: string;
+}
+export interface Section10 {
+  name: string;
+}
+export interface Section11 {
   name: string;
 }
 export interface RequestCard {
@@ -114,6 +134,36 @@ export const ContentMain: TContent = {
     { name: "ابزار هوشمند سوددهی" },
     {
       name: "زرین‌پلاس محصولی از زرین‌پال، فرصتی فراهم کرده است تا کسب و کارها در هر اندازه و دسته‌بندی شغلی، با در دست داشتن ابزاری قدرتمند برای وفادارسازی مشتریان و افزایش فروش محصولات خود، بتوانند کسب و کار خود را به بهترین شکل توسعه و گسترش دهند و جایگاه برترین فروشگاه منطقه را به خود اختصاص دهند",
+    },
+  ],
+  Section7: [
+    { name: "ویژگی‌های درگاه پرداخت زرین‌پال" },
+    {
+      name: "درگاه پرداخت اینترنتی زرین‌پال، امکان مدیریت تراکنش‌های مالی در بستر وب را به راحتی امکان‌پذیر می‌کند و با پیاده‌سازی و اجرای راه‌کارهای هوشمندانه، باعث افزایش درصد تراکنش‌های موفق و سوددهی بیش‌تر می‌شود",
+    },
+  ],
+  Section8: [
+    { name: "ضمانتِ پرداخت" },
+    {
+      name: "درگاه پرداخت زرین‌پال، تجربه‌ی پرداخت اینترنتی آسان، سریع و امن را به مشتریان کسب و کارهای آنلاین هدیه می‌دهد.",
+    },
+  ],
+  Section9: [
+    { name: "مسیردهی هوشمند" },
+    {
+      name: "استانداردهای متفاوت زرین‌پال در بازه‌های زمانی مختلف، باعث می‌شود کاربران به بهترین درگاه پرداخت با بالاترین میزان تراکنش‌های موفق هدایت شوند.",
+    },
+  ],
+  Section10: [
+    { name: "پشتیبانی ۲۴/۷" },
+    {
+      name: "هفت روزِ هفته، با پشتیبانی ۲۴ ساعته‌ی زرین‌پال، آماده‌ی پاسخ‌گویی و راهنمایی به کاربران هستیم.",
+    },
+  ],
+  Section11: [
+    { name: "امنیتِ پرداخت" },
+    {
+      name: "درگاه امن زرین‌پال، ضمانتی برای امنیت اطلاعات بانکی افراد، هنگام پرداخت‌‌های اینترنتی آن‌هاست.",
     },
   ],
 };
