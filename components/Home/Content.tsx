@@ -258,18 +258,19 @@ const SectionSix = () => {
 
 const SectionSeven = () => {
   return (
-    <div className="container w-full mx-auto xl:w-3/4 pt-20 flex">
-      <div className="w-1/3 pt-9">
-        <p className="font-bold text-2xl text-slate-800">
+    <div className="container w-full pt-20 mx-auto px-10 lg:px-0 lg:flex lg:w-3/4 ">
+      <div className="pt-9 mx-auto lg:w-1/3">
+        <p className="font-bold text-2xl text-slate-800 text-center md:text-right">
           {ContentMain.Section7[0].name}
         </p>
-        <p className="pt-10 text-justify text-slate-500">
+        <p className="pt-10 text-justify text-slate-500 leading-10">
           {ContentMain.Section7[1].name}
         </p>
       </div>
-      <div className=" w-2/3 mr-20 grid grid-cols-2">
-        <div className="p-9">
-          <div className="text-2xl font-bold text-slate-800 flex">
+
+      <div className="w-full grid grid-cols-1 mt-10 lg:mt-0 sm:grid-cols-2 lg:mr-10 lg:w-2/3">
+        <div className="lg:p-9 p-4">
+          <div className="text-lg md:text-xl font-bold text-slate-800 flex">
             <div className="pl-5">
               <Image
                 src="assets/verifiedIcon.svg"
@@ -281,14 +282,13 @@ const SectionSeven = () => {
             <div className="pt-2">{ContentMain.Section8[0].name}</div>
           </div>
           <div>
-            <p className=" text-slate-500 text-justify pt-5">
+            <p className=" text-slate-500 text-justify pt-5 leading-8">
               {ContentMain.Section8[1].name}
             </p>
           </div>
         </div>
-
-        <div className="border-b border-r p-9">
-          <div className="text-2xl font-bold text-slate-800 flex">
+        <div className="lg:border-b lg:border-r lg:p-9 p-4">
+          <div className="text-lg md:text-xl font-bold text-slate-800 flex">
             <div className="pl-5">
               <Image
                 src="assets/splite.svg"
@@ -300,14 +300,13 @@ const SectionSeven = () => {
             <div className="pt-2">{ContentMain.Section9[0].name}</div>
           </div>
           <div>
-            <p className=" text-slate-500 text-justify pt-5">
+            <p className=" text-slate-500 text-justify pt-5 leading-8">
               {ContentMain.Section9[1].name}
             </p>
           </div>
         </div>
-
-        <div className="border-t border-l p-9">
-          <div className="text-2xl font-bold text-slate-800 flex">
+        <div className="lg:border-t lg:border-l lg:p-9 p-4">
+          <div className="text-lg flex font-bold text-slate-800 md:text-xl">
             <div className="pl-5">
               <Image
                 src="assets/supportt.svg"
@@ -319,14 +318,13 @@ const SectionSeven = () => {
             <div className="pt-2">{ContentMain.Section10[0].name}</div>
           </div>
           <div>
-            <p className=" text-slate-500 text-justify pt-5">
+            <p className=" text-slate-500 text-justify pt-5 leading-8">
               {ContentMain.Section10[1].name}
             </p>
           </div>
         </div>
-
-        <div className="p-9">
-          <div className="text-2xl font-bold text-slate-800 flex">
+        <div className="lg:p-9 p-4">
+          <div className="text-lg flex md:text-xl font-bold text-slate-800 ">
             <div className="pl-5">
               <Image
                 src="assets/supportt.svg"
@@ -338,7 +336,7 @@ const SectionSeven = () => {
             <div className="pt-2">{ContentMain.Section11[0].name}</div>
           </div>
           <div>
-            <p className=" text-slate-500 text-justify pt-5">
+            <p className=" text-slate-500 text-justify pt-5 leading-8">
               {ContentMain.Section11[1].name}
             </p>
           </div>
