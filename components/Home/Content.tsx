@@ -53,7 +53,7 @@ const SectionTwo = () => {
   return (
     <div className="pt-24" id="SectionTwo">
       <div className="flex flex-wrap flex-col justify-center items-center lg:flex lg:flex-row">
-        <div className="hidden sm:flex flex-1 relative lg:justify-start">
+        <div className="hidden sm:flex flex-1 lg:justify-start">
           <Image src="assets/pg.svg" alt="pgsvg" width={450} height={500} />
         </div>
         <div className="flex flex-1 flex-col text-center mx-10 md:justify-end md:text-right lg:mx-0 lg:justify-end">
@@ -132,7 +132,7 @@ const Sectionfour = () => {
   return (
     <div className="pt-24">
       <div className="flex flex-wrap flex-col justify-center items-center lg:flex lg:flex-row">
-        <div className="hidden sm:flex flex-1 relative lg:justify-start">
+        <div className="hidden sm:flex flex-1 lg:justify-start">
           <Image
             src="assets/zarincard .svg"
             alt="pgsvg"
@@ -216,7 +216,7 @@ const SectionSix = () => {
   return (
     <div className="pt-24">
       <div className="flex flex-wrap flex-col justify-center items-center lg:flex lg:flex-row">
-        <div className=" hidden md:flex flex-1 relative">
+        <div className=" hidden md:flex flex-1">
           <Image
             src="assets/zarinplus.svg"
             alt="pgsvg"
@@ -348,7 +348,7 @@ const SectionSeven = () => {
 
 const SectionEight = () => {
   return (
-    <div className="border-2 w-full border-slate-300 h-48 flex flex-col justify-center items-center rounded-3xl mt-10">
+    <div className="border-2 border-slate-300 h-48 flex flex-col justify-center items-center rounded-3xl mt-10 ">
       <p className="font-bold md:text-2xl text-slate-800">
         {ContentMain.Section12[0].name}
       </p>

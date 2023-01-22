@@ -126,7 +126,7 @@ function Menu() {
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <div>
+    <div className="md:sticky top-0">
       <div className="text-3xl px-0 h-16 flex flex-row justify-between items-center p-2 md:hidden">
         <div>
           <Logo />
@@ -156,7 +156,7 @@ export default function Header() {
           </div>
         </div>
       </ul>
-      <div className="hidden mx-auto mt-3 text-sm bg-white border-b h-16 md:flex ">
+      <div className="hidden mt-3 text-sm bg-white bg-opacity-90 border-b h-16 md:flex ">
         <div className="flex flex-1 items-center">
           <Logo />
           <ul className="w-full flex flex-row justify-end">
