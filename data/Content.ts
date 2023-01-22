@@ -10,6 +10,8 @@ export interface TContent {
   Section9: Section9[];
   Section10: Section10[];
   Section11: Section11[];
+  Section12: Section12[];
+  start: start[];
   Register: Register[];
   Login: Login[];
   ShareRequest: ShareRequest[];
@@ -51,6 +53,13 @@ export interface Section10 {
 }
 export interface Section11 {
   name: string;
+}
+export interface Section12 {
+  name: string;
+}
+export interface start {
+  name: string;
+  href?: string;
 }
 export interface RequestCard {
   name: string;
@@ -94,6 +103,7 @@ export const ContentMain: TContent = {
   RequestCard: [{ name: "درخواست زرین کارت", href: "/" }],
   ShareRequest: [{ name: "درخواست فعال سازی تسهیم", href: "/" }],
   JoinZarinPlus: [{ name: "پیوستن به زرین پلاس", href: "/" }],
+  start: [{ name: "شروع کنید", href: "/" }],
   Section1: [
     { name: "بیش از ۱۲ سال" },
     { name: "انتخاب مطمئنِ کسب و کارهای آنلاین" },
@@ -165,5 +175,9 @@ export const ContentMain: TContent = {
     {
       name: "درگاه امن زرین‌پال، ضمانتی برای امنیت اطلاعات بانکی افراد، هنگام پرداخت‌‌های اینترنتی آن‌هاست.",
     },
+  ],
+  Section12: [
+    { name: "به خانواده‌ی یک میلیونی زرین‌پال بپیوندید." },
+    { name: "یک ماه رایگان، هدیه‌ی عضویت زرین‌پال به شما" },
   ],
 };
