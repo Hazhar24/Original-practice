@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const SectionOne = () => {
   return (
-    <div className="container w-full border rounded-3xl mt-5 bg-blue-900 mx-auto xl:w-3/4">
+    <div className="border rounded-3xl mt-5 bg-blue-900 ">
       <div className="flex flex-row px-10 lg:px-20 bg-hero">
         <ul className="flex flex-1 pt-20 flex-col text-right sm:text-center lg:text-right justify-center text-white">
           <li className="text-xl sm:text-2xl pb-4 font-bold">
@@ -51,7 +51,7 @@ const SectionOne = () => {
 };
 const SectionTwo = () => {
   return (
-    <div className="container w-full mx-auto xl:w-3/4 pt-24" id="SectionTwo">
+    <div className="pt-24" id="SectionTwo">
       <div className="flex flex-wrap flex-col justify-center items-center lg:flex lg:flex-row">
         <div className="hidden sm:flex flex-1 relative lg:justify-start">
           <Image src="assets/pg.svg" alt="pgsvg" width={450} height={500} />
@@ -89,7 +89,7 @@ const SectionTwo = () => {
 };
 const SectionThree = () => {
   return (
-    <div className="container flex w-full mx-auto pt-10 sm:flex-col xl:w-3/4 lg:pt-16 lg:flex-row lg:px-0">
+    <div className="flex pt-10 sm:flex-col lg:pt-16 lg:flex-row">
       <div className="flex flex-1 flex-col text-center mx-10 lg:mx-0 md:text-right lg:mt-14 lg:text-start">
         <p className="text-2xl text-slate-500 font-medium">
           {ContentMain.Section3[0].name}
@@ -130,7 +130,7 @@ const SectionThree = () => {
 };
 const Sectionfour = () => {
   return (
-    <div className="container w-full mx-auto xl:w-3/4 pt-24">
+    <div className="pt-24">
       <div className="flex flex-wrap flex-col justify-center items-center lg:flex lg:flex-row">
         <div className="hidden sm:flex flex-1 relative lg:justify-start">
           <Image
@@ -173,7 +173,7 @@ const Sectionfour = () => {
 };
 const Sectionfive = () => {
   return (
-    <div className="container flex w-full mx-auto pt-10 sm:flex-col xl:w-3/4 lg:pt-16 lg:px-0 lg:flex-row">
+    <div className="flex pt-10 sm:flex-col lg:pt-16 lg:flex-row">
       <div className="flex flex-1 flex-col text-center mx-10 lg:mx-0 md:text-right lg:mt-14 lg:text-start">
         <p className="text-2xl text-slate-500 font-medium">
           {ContentMain.Section5[0].name}
@@ -214,7 +214,7 @@ const Sectionfive = () => {
 };
 const SectionSix = () => {
   return (
-    <div className="container w-full mx-auto xl:w-3/4 pt-24">
+    <div className="pt-24">
       <div className="flex flex-wrap flex-col justify-center items-center lg:flex lg:flex-row">
         <div className=" hidden md:flex flex-1 relative">
           <Image
@@ -258,7 +258,7 @@ const SectionSix = () => {
 
 const SectionSeven = () => {
   return (
-    <div className="container w-full pt-20 mx-auto px-10 lg:px-0 lg:flex lg:w-3/4 ">
+    <div className="pt-20 px-10 lg:px-0 lg:flex">
       <div className="pt-9 mx-auto lg:w-1/3">
         <p className="font-bold text-2xl text-slate-800 text-center md:text-right">
           {ContentMain.Section7[0].name}
@@ -346,9 +346,25 @@ const SectionSeven = () => {
   );
 };
 
+const SectionEight = () => {
+  return (
+    <div className="border-2 w-full border-slate-300 h-48 flex flex-col justify-center items-center rounded-3xl mt-10">
+      <p className="font-bold md:text-2xl text-slate-800">
+        {ContentMain.Section12[0].name}
+      </p>
+      <p className="py-4 md:text-lg font-medium text-slate-500">
+        {ContentMain.Section12[1].name}
+      </p>
+      <p className="border w-24 h-10 text-center pt-1 rounded-2xl bg-yellow-400">
+        <Link href="/">{ContentMain.start[0].name}</Link>
+      </p>
+    </div>
+  );
+};
+
 const Content = () => {
   return (
-    <div className="mx-5 sm:mx-0">
+    <div>
       <SectionOne />
       <SectionTwo />
       <SectionThree />
@@ -356,6 +372,7 @@ const Content = () => {
       <Sectionfive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
     </div>
   );
 };
