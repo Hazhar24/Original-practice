@@ -127,7 +127,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className="text-3xl border h-16 flex flex-row justify-between items-center p-2 md:hidden">
+      <div className="text-3xl px-0 h-16 flex flex-row justify-between items-center p-2 md:hidden">
         <div>
           <Logo />
         </div>
@@ -156,7 +156,7 @@ export default function Header() {
           </div>
         </div>
       </ul>
-      <div className="container hidden mx-auto mt-3 text-sm border-b h-16 md:w-full md:flex w-3/4 lg:w-full lg:mx-auto xl:w-3/4 xl:mx-auto">
+      <div className="hidden mx-auto mt-3 text-sm bg-white border-b h-16 md:flex ">
         <div className="flex flex-1 items-center">
           <Logo />
           <ul className="w-full flex flex-row justify-end">
