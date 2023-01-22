@@ -5,7 +5,7 @@ import Main from "@/components/Home/Content";
 
 const Home = () => {
   return (
-    <div  className="container px-5 sm:mx-0 w-full md:mx-auto xl:w-3/4">
+    <div className="container px-5 mx-auto sm:px-0 xl:w-3/4">
       <Header />
       <Main />
       <Footer />
