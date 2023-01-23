@@ -364,7 +364,7 @@ const SectionEight = () => {
 
 const Content = () => {
   return (
-    <div>
+    <div className="container px-5 mx-auto sm:px-0 xl:w-3/4">
       <SectionOne />
       <SectionTwo />
       <SectionThree />
