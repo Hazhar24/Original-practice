@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="container px-5 mx-auto sm:px-0 xl:w-3/4">
       <div className="flex flex-col-reverse text-sm h-16 items-center container mx-auto md:flex-row md:justify-between md:font-bold md:text-lg md:border md:rounded-full md:bg-slate-100 md:px-3 lg:px-7 mt-14">
         <div className="flex">
           {footer.support.map((item) => (
@@ -43,7 +43,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div>
             <div className="text-sm">
               <div className="text-right text-lg font-bold">
@@ -63,7 +62,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div>
             <div className="text-sm">
               <div className="text-right text-lg font-bold">
@@ -83,7 +81,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           <div className="text-sm">
             <div className="text-right text-lg font-bold">
               {footer.sources[0].name}

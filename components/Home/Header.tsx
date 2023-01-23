@@ -126,7 +126,7 @@ function Menu() {
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="md:sticky top-0">
+    <div className="md:sticky md:top-0">
       <div className="text-3xl px-0 h-16 flex flex-row justify-between items-center p-2 md:hidden">
         <div>
           <Logo />
@@ -136,7 +136,7 @@ export default function Header() {
         </button>
       </div>
       <ul
-        className={`absolute w-full bg-white md:hidden text-right lg:hidden mt-16 duration-500 ${
+        className={`absolute md:hidden w-full bg-white text-right mt-16 duration-500 ${
           open ? "top-0" : "top-[-100%]"
         }`}
       >
@@ -156,7 +156,7 @@ export default function Header() {
           </div>
         </div>
       </ul>
-      <div className="hidden mt-3 text-sm bg-white bg-opacity-90 border-b h-16 md:flex ">
+      <div className="hidden mt-3 text-sm bg-white bg-opacity-90 border-b h-16 md:flex container w-full mx-auto xl:w-3/4">
         <div className="flex flex-1 items-center">
           <Logo />
           <ul className="w-full flex flex-row justify-end">
